@@ -6,6 +6,76 @@
     <title>From Club Manco Capac</title>
 </head>
 <body>
+    <form action="destino.php" method="post">
+
+<fieldset>
+    
+    <label for="textnombre">Nombre: </label>
+    <input type="text" id="textnombre" name="textnombre"
+    placeholder="Escribe tu nombre aqui">
+    <!--Definir que tipo de dato es en la parte de input tu
+    tu defines el type sea texto o numerico-->
+    <!--"INPUT"= elemento de entrada ya que existes muchos tipos de input de datos-->
+    <!--ejemplos nombre, correo, contraseña, etc-->
+    <!--type= tipo de dato, Id debe ser unico, name= control de nombre ya que lo 
+    usa el servidor-->
+</fieldset>
+
+    <fieldset>
+        <label for="textapellido">Apellido:</label>
+    
+    <input type="text" id="textapellido" name="textapellido" placeholder="Escribe aqui tu apellido">
+    
+
+    </fieldset>
+
+    <fieldset>
+    <label for="textCorreo">Correo: </label>
+    <input type="text" id="textCorreo" name="textCorreo" placeholder="Escribe aqui tu correo ">
+    
+    </fieldset>
+
+    <fieldset>
+    <label for="textContraseña">Contraseña:</label>
+    <input type="password" id="textContraseña" name="textContraseña" >
+
+    </fieldset>
+    <fieldset>
+        <label for="selPais">Pais:</label>
+        <Select name="selPais" id="selPais">
+            <option disabled selected>Seleccione una opcion</option>
+        <option value="pe">Peru</option>
+        <option value="br">Brazil</option>
+        <option value="ar">Argentina</option>
+        <option value="ru">Rusia</option>
+        <option value="ch">Chile</option>
+        <option value="Me">Mexico</option>
+        <option value="It">Italia</option>
+        <option value="Au">Australia</option>
+        <option value="Ta">Tailandia</option>
+        </Select>
+    </fieldset>
+    
+    <fieldset>
+        <p>Género</p>
         
+        <input type="radio"
+        name="radGernero" id="radMasculino" value="m" checked>
+        <label for="radMasculino">Masculino</label>
+
+        <input type="radio"
+        name="radGernero" id="radFemenino" value="f" checked>
+        <label for="radFemenino">Femenino</label>
+
+    </fieldset>
+    <fieldset>
+        <button type="submit" >Iniciar sesion</button>
+    </fieldset>
+    
+    
+
+    </form>
+
+
 </body>
 </html>
